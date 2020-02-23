@@ -1,21 +1,15 @@
 import React from 'react';
 import './App.css';
-import { HashRouter, Router } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import Nav from './Components/NavbarPage'
 import { Button} from 'reactstrap';
 import res from './resume.png';
 import face from './face1.png';
 import coffee from './coffee.png';
 import { FaAngleDown } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 
 function App() {
-  var element = document.getElementById("con");
-  const handleClick = () =>
-          element.scrollIntoView({
-          behavior: 'smooth'
-  });
   return (
     <div className="App">
       <HashRouter>
