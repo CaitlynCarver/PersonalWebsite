@@ -41,9 +41,9 @@ h1 {
 .col {
   text-align: center;
   flex: 33.33%;
-  padding: 5px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -51,7 +51,6 @@ h1 {
 }
 .roundimg {
   border-radius: 50%;
-  height: 100%;
   width: 50%;
 }
 .roundimg2 {
@@ -93,8 +92,6 @@ h1 {
   font-family:neon;
   font-size: 4rem;
   color: #ffd8d8;
-  padding: 0 3.5rem 0 3.5rem;
-
   text-shadow: 
   .1vw 0vw .25vw #ffd8d8, .15vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, 
   .1vw 0vw   0vw rgb(124, 162, 228), .15vw 0vw   0vw rgb(124, 162, 228), .2vw 0vw   0vw rgb(124, 162, 228),
@@ -124,8 +121,6 @@ h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-right: 25%;
-  margin-left: 15%;
   box-shadow:
   0 0 0.1vw  0.4vw #fff7f7,   
   0 0 0.4vw  0.6vw rgb(124, 162, 228), 
@@ -166,7 +161,7 @@ h1 {
 
 .column {
   flex: 33.33%;
-  padding: 5px;
+  padding: 20px;
 }
 
 .btn-primary {
@@ -234,6 +229,7 @@ h1 {
   width:100%;
   position: center;
   margin-top: 10%;
+  padding: 20px;
   text-align: center;
   background-color: rgba(0,0,0,0.3);
 }
@@ -296,6 +292,5 @@ h1 {
   }
   .nav-links a {
     margin: 0 1rem;
-    padding: 0.5rem 0;
   }
 }

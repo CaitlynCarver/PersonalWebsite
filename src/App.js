@@ -3,10 +3,11 @@ import './App.css';
 import { HashRouter } from 'react-router-dom';
 import Nav from './Components/NavbarPage'
 import { Button} from 'reactstrap';
-import res from './resume.png';
+import res from './Resume2021-1.png';
 import face from './face1.png';
 import coffee from './coffee.png';
 import { FaAngleDown } from 'react-icons/fa';
+
 
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
       
       <div class="row" id="resume">
           <div class="column">
-            <img alt="resume" src={res} ></img>
+            
+            <img alt="resume" src={res} width="100%" height="100%"></img>
           </div>
           <div class="column">
             <div class="neon-text">Resume-is <br></br>a-must</div>

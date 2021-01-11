@@ -23,18 +23,6 @@ export default class NavBarPage extends Component {
                             <FaAlignRight className="nav-icon" />
                         </button>
                     </div>
-
-                    <ul className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}>
-                        <li>
-                            <Link to="/">Contact</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Projects</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Resume</Link>
-                        </li>
-                    </ul>
                 </div>
             </nav>
         )
