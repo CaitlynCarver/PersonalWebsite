@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import logo from '../websiteback.png';
 import { FaAlignRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 
 export default class NavBarPage extends Component {
