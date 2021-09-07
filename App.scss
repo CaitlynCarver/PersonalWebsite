@@ -1,0 +1,495 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryColor: #af9a7d;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #cfcfcf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 3px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+/* globals */
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.2;
+}
+p {
+  color: black;
+}
+h1 {
+  color: white;
+  font-size: 3rem; 
+  font-family: neon;
+}
+p1 {
+  color: white;
+}
+.li1{
+  color: black;
+}
+li{
+  color: white;
+}
+h2 {
+  color: black;
+  font-size: 3rem; 
+  font-family:neon;
+}
+
+h3{
+  color: black;
+  font-size: 1rem;
+}
+h4 {
+  color: black;
+  font-size: 2rem; 
+  font-family:neon;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+
+}
+.bullets {
+  color: black;
+  content: "";
+}
+
+#newlist ul {
+  list-style: none;
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+#newlist ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 1em; /* Also needed for space (tweak if needed) */
+}
+
+.ContactSec{
+  background-color: black;
+  display: flex;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.roundimg {
+  border-radius: 50%;
+  height: 100%;
+  width: 50%;
+}
+.roundimg2 {
+  border-radius: 50%;
+  width: 20%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+/* neon section */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 20%;
+}
+@font-face {
+  font-family: neon;
+  src: url(./monoton/Monoton-Regular.ttf);
+}
+.neon-wrapper {
+  text-align: center;
+  display: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;
+  box-shadow:
+  0 0 0.1vw  0.4vw #fff7f7,   
+  0 0 0.4vw  0.6vw rgb(124, 162, 228), 
+  0 0   4vw  0.4vw rgb(17, 96, 231),
+  inset 0 0 1.5vw  0.4vw rgb(17, 96, 231),
+  inset 0 0 0.4vw  0.2vw rgb(124, 162, 228),
+  inset 0 0 0.5vw  0.2vw #fff7f7;
+  border-radius: 1.5rem;
+  margin-top: 1.5%;
+}
+.neon-text {
+  font-family:neon;
+  font-size: 4rem;
+  color: #ffd8d8;
+  padding: 0 3.5rem 0 3.5rem;
+
+  text-shadow: 
+  .1vw 0vw .25vw #ffd8d8, .15vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, 
+  .1vw 0vw   0vw rgb(124, 162, 228), .15vw 0vw   0vw rgb(124, 162, 228), .2vw 0vw   0vw rgb(124, 162, 228),
+  .1vw 0vw  .1vw rgb(124, 162, 228), .15vw 0vw  .1vw rgb(124, 162, 228), .2vw 0vw  .1vw rgb(124, 162, 228),
+  .1vw 0vw   2vw rgb(124, 162, 228), .15vw 0vw   2vw rgb(124, 162, 228), .2vw 0vw   2vw rgb(124, 162, 228), 
+  .1vw 0vw   1vw rgb(17, 96, 231), .15vw 0vw   1vw rgb(17, 96, 231), .2vw 0vw   5vw rgb(17, 96, 231), 
+  .1vw 0vw   5vw rgb(17, 96, 231), .15vw 0vw  20vw rgb(17, 96, 231), .2vw 0vw  10vw rgb(17, 96, 231),
+  .1vw 0vw  10vw rgb(17, 96, 231), .15vw 0vw  30vw rgb(17, 96, 231), .2vw 0vw  10vw rgb(17, 96, 231);
+}
+.neon-text3 {
+  font-family:neon;
+  font-size: 4rem;
+  color: #ffd8d8;
+  padding: 0 3.5rem 0 3.5rem;
+
+  text-shadow: 
+  .1vw 0vw .25vw #ffd8d8, .15vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, 
+  .1vw 0vw   0vw rgb(124, 162, 228), .15vw 0vw   0vw rgb(124, 162, 228), .2vw 0vw   0vw rgb(124, 162, 228),
+  .1vw 0vw  .1vw rgb(124, 162, 228), .15vw 0vw  .1vw rgb(124, 162, 228), .2vw 0vw  .1vw rgb(124, 162, 228),
+  .1vw 0vw   2vw rgb(124, 162, 228), .15vw 0vw   2vw rgb(124, 162, 228), .2vw 0vw   2vw rgb(124, 162, 228), 
+  .1vw 0vw   1vw rgb(17, 96, 231), .15vw 0vw   1vw rgb(17, 96, 231), .2vw 0vw   5vw rgb(17, 96, 231), 
+  .1vw 0vw   5vw rgb(17, 96, 231), .15vw 0vw  20vw rgb(17, 96, 231), .2vw 0vw  10vw rgb(17, 96, 231),
+  .1vw 0vw  10vw rgb(17, 96, 231), .15vw 0vw  30vw rgb(17, 96, 231), .2vw 0vw  10vw rgb(17, 96, 231);
+  flex-direction: row;
+}
+/* neon section */
+.wrapper1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 20%;
+  text-align: center;
+}
+@font-face {
+  font-family: neon;
+  src: url(./monoton/Monoton-Regular.ttf);
+}
+.neon-wrapper1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 25%;
+  margin-left: 25%;
+  box-shadow:
+  0 0 0.1vw  0.4vw #fff7f7,   
+  0 0 0.4vw  0.6vw rgb(124, 162, 228), 
+  0 0   4vw  0.4vw rgb(17, 96, 231),
+  inset 0 0 1.5vw  0.4vw rgb(17, 96, 231),
+  inset 0 0 0.4vw  0.2vw rgb(124, 162, 228),
+  inset 0 0 0.5vw  0.2vw #fff7f7;
+  border-radius: 1.5rem;
+  margin-top: 2%;
+}
+.neon-text1 {
+  text-align: center;
+  font-family: neon;
+  font-size: 2rem;
+  color: #ffd8d8;
+  padding: 0 3.5rem 0 3.5rem;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 
+               0 0 40px rgb(124, 162, 228), 0 0 70px rgb(124, 162, 228), 0 0 80px rgb(124, 162, 228),
+               0 0 100px rgb(17, 96, 231), 0 0 150px rgb(17, 96, 231);
+  
+}
+.neon-text2 {
+  text-align: center;
+  font-family:neon;
+  font-size: 2rem;
+  color: black;
+  padding: 0 3.5rem 0 3.5rem;
+
+  text-shadow: 
+  .1vw 0vw .25vw #fff, .15vw 0vw .25vw #fff, .2vw 0vw .25vw black, 
+  .1vw 0vw   0vw rgb(124, 162, 228), .15vw 0vw   0vw rgb(124, 162, 228), .2vw 0vw   0vw rgb(124, 162, 228),
+  .1vw 0vw  .1vw rgb(124, 162, 228), .15vw 0vw  .1vw rgb(124, 162, 228), .2vw 0vw  .1vw rgb(124, 162, 228),
+  .1vw 0vw   2vw rgb(124, 162, 228), .15vw 0vw   2vw rgb(124, 162, 228), .2vw 0vw   2vw rgb(124, 162, 228), 
+  .1vw 0vw   1vw rgb(17, 96, 231), .15vw 0vw   1vw rgb(17, 96, 231), .2vw 0vw   5vw rgb(17, 96, 231), 
+  .1vw 0vw   5vw rgb(17, 96, 231), .15vw 0vw  20vw rgb(17, 96, 231), .2vw 0vw  10vw rgb(17, 96, 231),
+  .1vw 0vw  10vw rgb(17, 96, 231), .15vw 0vw  30vw rgb(17, 96, 231), .2vw 0vw  10vw rgb(17, 96, 231);
+}
+.ResumeSec {
+ margin: 1%;
+}
+.imageleft {
+  margin-left: 15%;
+  margin-top: 20%;
+}
+.pblack {
+  color: black;
+  font-size: 1rem; 
+}
+.pwhite {
+  color: white;
+}
+.row {
+  display: flex;
+  margin-left: auto;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+.rows2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 7%;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  background-color: black;
+}
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: white;
+  background: transparent;
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: var(--primaryColor);
+  color: white;
+}
+.btn-primary2 {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: white;
+  background: var(--primaryColor);
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-primary2:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+.loading {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 3rem;
+}
+.error {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+.empty-search {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  padding: 1rem;
+  letter-spacing: var(--mainSpacing);
+}
+/* end of globals */
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 25px;
+  width: 100%;
+  padding: 0.50rem .50rem;
+  background: var(--offWhite);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+.jumbo {
+  width:100%;
+  position: center;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  margin-top: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.nav-icon {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+.nav-links {
+  margin-top: 1%;
+  overflow: hidden;
+  transition: var(--mainTransition);
+  list-style-type: none;
+}
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  color:white; 
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: var(--mainSpacing);
+}
+.nav-links a:hover {
+  color: var(--primaryColor);
+}
+
+.navlogo {
+  height: 60px;
+  width: 80px;
+}
+.show-nav {
+  height: 10px;
+   
+}
+@media screen and (min-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+  .nav-center {
+    display: flex; 
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+  }
+  .nav-links a {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+}
+.Projects {
+  display: flex;
+  margin: 0 1rem;
+  justify-content: center;
+}
+
+.lead {
+  color: white;
+}
+
+/* for coffee icon*/
+.supportFromHome {
+  bottom: 15px;
+}
+
+.inputs {
+  color: black;
+}
+
+.project-buttons{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.tech-skills{
+  margin-top: 20%;
+  text-align: center;
+  margin-right: 15%;
+  margin-left: 15%;
+  box-shadow:
+  0 0 0.1vw  0.4vw #fff7f7,   
+  0 0 0.4vw  0.6vw rgb(124, 162, 228), 
+  0 0   4vw  0.4vw rgb(17, 96, 231),
+  inset 0 0 1.5vw  0.4vw rgb(17, 96, 231),
+  inset 0 0 0.4vw  0.2vw rgb(124, 162, 228),
+  inset 0 0 0.5vw  0.2vw #fff7f7;
+  border-radius: 1.5rem;
+  margin-top: 1.5%;
+  padding: 20px;
+}
+
+.tech-skills2{
+  flex-direction: row;
+}
+
+/* for Canterbury css component*/
+
+.A2{
+  background-image: url("background.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.canter{
+  margin-top: 10%;
+}
+.canterheader{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 7%;
+  margin-right: 5%;
+}
+
+/* for the new scss for the buttons*/ 
+
+
+/* this is for the grid */
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.tops {
+  position: relative;
+}
+.tops1 {
+  position:absolute;
+  z-index:0;
+}
+.tops2 {
+  position:absolute;
+  z-index:1;
+}
+
+.spacy {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.Iconspace {
+  flex-Direction: "column";
+}
